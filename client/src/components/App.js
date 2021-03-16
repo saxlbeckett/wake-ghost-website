@@ -8,6 +8,7 @@ import RegistrationForm from "./registration/RegistrationForm";
 import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
 import FrontPage from "./content/FrontPage"
+import AudioPlayers from "./content/AudioPlayers"
 
 const App = (props) => {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -26,6 +27,9 @@ const App = (props) => {
       <Switch>
         <Route exact path="/">
           <FrontPage/>
+        </Route>
+        <Route exact path="/releases">
+          <AudioPlayers/>
         </Route>
         <Route exact path="/users/new" component={RegistrationForm} />
         <Route exact path="/user-sessions/new" component={SignInForm} />

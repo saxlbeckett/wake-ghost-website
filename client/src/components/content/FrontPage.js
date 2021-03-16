@@ -1,5 +1,6 @@
 import React from 'react'
-import AudioPlayers from "./AudioPlayers"
+import { Link } from 'react-router-dom'
+
 
 const FrontPage = () => {
 
@@ -18,8 +19,7 @@ const FrontPage = () => {
         He is reverse old actually and on top of all music trends.</p>
       </section>
       <section>
-        <h2>Hot tracks:</h2>
-        <AudioPlayers/>
+        <h3><Link to="/releases">Releases</Link></h3>
       </section>
     </div>
   )
