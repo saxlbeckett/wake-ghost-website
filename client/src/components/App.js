@@ -8,7 +8,8 @@ import RegistrationForm from "./registration/RegistrationForm";
 import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
 import FrontPage from "./content/FrontPage"
-import AudioPlayers from "./content/AudioPlayers"
+import AudioPlayers from "./content/AudioPlayer"
+import AlbumIndex from "./content/AlbumIndex";
 
 const App = (props) => {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -29,7 +30,7 @@ const App = (props) => {
           <FrontPage/>
         </Route>
         <Route exact path="/releases">
-          <AudioPlayers/>
+          <AlbumIndex/>
         </Route>
         <Route exact path="/users/new" component={RegistrationForm} />
         <Route exact path="/user-sessions/new" component={SignInForm} />
