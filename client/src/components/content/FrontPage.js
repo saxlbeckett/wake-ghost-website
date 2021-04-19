@@ -3,20 +3,30 @@ import { Link } from 'react-router-dom'
 
 
 const FrontPage = () => {
+  const wakeGhostObject = {
+    albums: [
+      {
+        title: "What is the Reason for Life?",
+        tracks: [
+          {
+            one: "Ghost Warship",
+            audioFile: "https://audiofilestorage2.s3.amazonaws.com/Ghost+Warship.mp3",
+            lyrics: "",
+            image: "https://audiofilestorage2.s3.amazonaws.com/Wake+Ghost+Cover_Demo+Fest.jpeg"
+          },
+          {
+            two: "Not Now Madeline"
+          }
+        ],
 
+      }
+    ]
+  }
   return(
     <div>
       <h1>Wake Ghost</h1>
       <section>
-        <h2>Members:</h2>
-        <h4>Yams, Queen Thickems:</h4>
-        <img></img>
-        <p>Yams was born in 1793 where her elegance wasn't celebrated enough,<br/>
-        so she looked coldly upon them all and they froze</p>
-        <h4>Snot Bucket</h4>
-        <img></img>
-        <p>Snot Buckett was born in 2748 and knows about all the cool shit and is not even old.<br/>
-        He is reverse old actually and on top of all music trends.</p>
+        
       </section>
       <section>
         <h3><Link to="/releases">Releases</Link></h3>
